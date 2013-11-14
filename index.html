@@ -1,4 +1,4 @@
-<!-- Build 10 -->
+<!-- Build 11 -->
 <!doctype html>
 <html>
   <head>
@@ -33,7 +33,7 @@
     <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splash-2048x1496.png" />
 
 
-    
+
     <link rel="stylesheet" type="text/css" href="css/app/app.min.css" />
 
 
@@ -46,11 +46,37 @@
     <div id="vignette"></div>
     <div id="loading-spinner"></div>
 
-    
-    
-    <script type="text/x-config" data-name="staging" data-src="configs/staging.json" data-default></script>
+    <script type="text/x-config" data-name="production" data-default>
+{
+  "api_url": "https://api.clover.com/v2/merchant/{0}/{1}",
+  "auth_url": "https://clover.com/{0}",
+  "mock_url": "/assets/mock/{0}.json",
+  "app_id": "H3XNANEEP9ATC"
+}
+    </script>
 
-    <script type="text/x-translation" data-name="en_US" data-src="messages/en_US.json" data-default></script>
+    <script type="text/x-translation" data-name="en_US" data-default>
+{
+  "error_required": "{0} is a required field",
+  "error_pattern": "{0} is not formatted correctly",
+  "error_email": "{0} must be an email address",
+  "error_tel": "{0} must be a telephone number",
+  "error_number": "{0} must be a number",
+  "error_url": "{0} must be a URL",
+  "error_offline": "No internet connection available. Please check your settings and connection and try again.",
+  "time_range.day": "Past 24 Hours",
+  "time_range.week": "Past Week",
+  "time_range.month": "Past Month",
+  "time_range.custom": "Custom Range",
+  "chart_axis.millisecond": "Time (milliseconds)",
+  "chart_axis.second": "Time (seconds)",
+  "chart_axis.minute": "Time (minutes)",
+  "chart_axis.hour": "Time",
+  "chart_axis.day": "Time (day of the month)",
+  "chart_axis.month": "Time (month)",
+  "chart_axis.year": "Time (year)"
+}
+</script>
     <script src="js/app.min.js"></script>
 
   </body>
