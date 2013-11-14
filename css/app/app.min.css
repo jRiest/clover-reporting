@@ -235,6 +235,7 @@ body.hide-header #vignette{display:none}
 .popover.select li.active{background:url(../../assets/img/menu_check@2x.png) no-repeat;background-size:20px 16px;background-position:163px center}
 @media (max-width:767px){.popover.pie_popover{display:none !important}}
 @-webkit-keyframes loadingSpinnerIn{from{-webkit-transform:scale(1.3);transform:scale(1.3);opacity:0}}@-moz-keyframes loadingSpinnerIn{from{-moz-transform:scale(1.3);transform:scale(1.3);opacity:0}}@keyframes loadingSpinnerIn{from{transform:scale(1.3);opacity:0}}#loading-spinner{position:absolute;top:50%;left:50%;width:125px;height:125px;background:rgba(0,0,0,0.59);z-index:999;margin-top:-62.5px;margin-left:-62.5px;border-radius:15px;display:none;-webkit-animation:loadingSpinnerIn 200ms 300ms ease-out backwards;-moz-animation:loadingSpinnerIn 200ms 300ms ease-out backwards;animation:loadingSpinnerIn 200ms 300ms ease-out backwards}#loading-spinner.loading{display:block}
+body.hide-spinner #loading-spinner{display:none !important}
 #loading-spinner .spinner{position:absolute !important;top:50% !important;left:50% !important}
 .view.dashboard{position:relative}.view.dashboard .revenue-graph{width:100%;min-height:20%;position:relative}
 .view.dashboard .pie-chart h2.title{text-align:center;font-size:18px;font-weight:bold;margin:20px 0 10px}@media (min-width:1000px){.view.dashboard .pie-chart h2.title{display:none}}
@@ -313,7 +314,7 @@ body.hide-header #vignette{display:none}
 .revenue_over_time .wrapper svg .tick line{stroke:rgba(255,255,255,0.05)}
 .revenue_over_time .wrapper svg .nv-y .tick line{stroke:rgba(255,255,255,0.03)}
 .revenue_over_time .wrapper svg .tick.minor{stroke:rgba(255,255,255,0.03)}
-.revenue_over_time .wrapper .nvtooltip{position:absolute;background-color:#fff;font-size:13px;padding:10px;pointer-events:auto;color:#000000}.revenue_over_time .wrapper .nvtooltip .triangle{position:absolute;top:100%;margin-top:-12px;margin-left:-15px;left:50%;width:30px;height:30px}.revenue_over_time .wrapper .nvtooltip .triangle:before{content:'';display:block;position:absolute;width:0;height:0;top:50%;margin-top:-5px;left:50%;margin-left:-10px;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff}
+.revenue_over_time .wrapper .nvtooltip{position:absolute;background-color:#fff;font-size:13px;padding:10px;pointer-events:auto;color:#000000}.revenue_over_time .wrapper .nvtooltip .triangle{position:absolute;top:100%;margin-top:-3px;margin-left:-10px;left:50%;width:20px;height:10px}.revenue_over_time .wrapper .nvtooltip .triangle:before{content:'';display:block;position:absolute;width:0;height:0;top:50%;margin-top:-5px;left:50%;margin-left:-10px;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff}
 .revenue_over_time .wrapper .nvtooltip .triangle.open:before{border-top:0;border-bottom:10px solid #fff}
 .revenue_over_time .wrapper .nvtooltip .money{margin:0;padding:0;text-align:center;font-size:18px;line-height:23px;font-weight:bold;padding:0 10px}
 .revenue_over_time .wrapper .nvtooltip time{margin:0;padding:0;display:block;text-align:center;font-size:14px;font-weight:bold;line-height:14px}
